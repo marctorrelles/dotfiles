@@ -18,16 +18,16 @@ alias c='clear'                             # c:            Clear terminal displ
 alias md='mkdir -pv'
 alias rd='rmdir pv'
 
-## Rails
+## Rails
 alias be='bundle exec'
 alias migrate='bundle exec rails db:migrate'
 alias data='bundle exec rails data:migrate'
 
-## Git
+## Git
 alias g='git'
 # More in ~/.gitconfig
 
-## Utils
+## Utils
 alias edit-bash='vim ~/.bashrc'
 alias source-bash='source ~/.bashrc'
 
