@@ -4,8 +4,6 @@ files=".bash_profile .gitconfig .tmux.conf"
 
 for file in $files
 do
-  if [ -L $HOME/$file ]; then
-    unlink $HOME/$file
-  fi
+  rm $HOME/$file -f
   ln -s $HOME/.dotfiles/$file $HOME
 done
