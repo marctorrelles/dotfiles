@@ -2,6 +2,15 @@
   name = Marc Torrelles
   email = marctorrelles@gmail.com
 
+[push]
+  default = simple
+
+[safe]
+  directory = *
+
+[credential]
+  helper = /usr/bin/gp credential-helper
+
 [color]
   diff = auto
   branch = auto
@@ -31,8 +40,8 @@
   aliases = config --get-regexp alias
 
   # Amend the currently staged files to the latest commit
-  amend = commit --amend --reuse-message=HEAD
-  ammend = commit --amend --reuse-message=HEAD
+  ammend = commit --amend --no-edit
+  amend = ammend
 
   # Interactive rebase with the given number of latest commits
   reb = "!r() { git rebase -i HEAD~$1; }; r"
@@ -49,3 +58,6 @@
   tags = tag -l
   branches = branch --all
   remotes = remote --verbose
+
+  # Create a new branch
+  new = checkout -b

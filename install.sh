@@ -4,6 +4,9 @@ files=".bash_profile .gitconfig .tmux.conf"
 
 for file in $files
 do
-  rm $HOME/$file -f
-  ln -s $HOME/.dotfiles/$file $HOME
+  if [ -L $HOME/.$file ]; then
+    paste $HOME/.dotfiles/$file >> $HOME/.$file
+  else
+    cp $HOME/.dotfiles/$file $HOME
+  fi
 done
