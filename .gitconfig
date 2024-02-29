@@ -49,10 +49,13 @@
   # Interactive rebase with the given number of latest commits
   reb = "!r() { git rebase -i HEAD~$1; }; r"
 
-  # Interactive rebase with a fresh origin/master
+  # Interactive rebase with a fresh origin/master or origin/main
   rebmaster = "!git fetch origin && git rebase origin/master -i"
-  # or with origin/main 💪
   rebmain = "!git fetch origin && git rebase origin/main -i"
+
+  # Merge with a fresh origin/master or origin/main
+  mergemaster = "!git fetch origin && git merge origin/master"
+  mergemain = "!git fetch origin && git merge origin/main"
 
   # Remove branches that have already been merged with main
   clean = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"

@@ -11,10 +11,9 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias code='code .'                         # code:         Opens current file/directory in vscode
+alias c='code'                              # code:         Opens current file/directory in vscode
 alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS
 alias ~='cd ~'                              # ~:            Go Home
-alias c='clear'                             # c:            Clear terminal display
 alias md='mkdir -pv'
 alias rd='rmdir pv'
 
