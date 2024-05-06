@@ -5,8 +5,8 @@ files=".bash_profile .gitconfig .tmux.conf"
 for file in $files
 do
   if [ -L $HOME/.$file ]; then
-    paste $HOME/.dotfiles/$file >> $HOME/.$file
+    paste ./$file >> $HOME/.$file
   else
-    cp $HOME/.dotfiles/$file $HOME
+    cp ./$file $HOME
   fi
 done
