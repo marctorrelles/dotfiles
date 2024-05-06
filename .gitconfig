@@ -62,7 +62,7 @@
 
   # Show verbose output about tags, branches or remotes
   tags = tag -l
-  branches = branch --all
+  branches = "!git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads | head -n 10"
   remotes = remote --verbose
 
   # Create a new branch
