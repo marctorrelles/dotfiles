@@ -67,3 +67,9 @@
 
   # Create a new branch
   new = checkout -b
+
+  # Sync local branch with origin
+  sync = "!f() { git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD) $1; }; f"
+
+  # Add + amend + push -f
+  aapf = !git add . && git commit --amend --no-edit && git push -f
