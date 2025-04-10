@@ -4,6 +4,7 @@
 
 [push]
   default = simple
+  autoSetupRemote = true
 
 [safe]
   directory = *
@@ -41,7 +42,6 @@
 
   # Amend the currently staged files to the latest commit
   ammend = commit --amend --no-edit
-  amend = ammend
 
   # Rename last commit
   rename = commit --amend
