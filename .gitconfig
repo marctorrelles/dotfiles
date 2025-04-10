@@ -43,7 +43,8 @@
   ammend = commit --amend --no-edit
   amend = ammend
 
-  # Reword last commit
+  # Rename last commit
+  rename = commit --amend
   reword = commit --amend
 
   # Interactive rebase with the given number of latest commits
@@ -73,3 +74,4 @@
 
   # Add + amend + push -f
   aapf = !git add . && git commit --amend --no-edit && git push -f
+
