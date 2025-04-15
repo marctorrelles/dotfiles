@@ -41,6 +41,7 @@
   aliases = config --get-regexp alias
 
   # Amend the currently staged files to the latest commit
+  amend = commit --amend --no-edit
   ammend = commit --amend --no-edit
 
   # Rename last commit
