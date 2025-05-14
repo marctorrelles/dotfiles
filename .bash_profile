@@ -22,9 +22,9 @@ alias be='bundle exec'
 alias migrate='bundle exec rails db:migrate'
 alias data='bundle exec rails data:migrate'
 
-## Git
+## Libraries
 alias g='git'
-# More in ~/.gitconfig
+alias p='pnpm'
 
 ## Utils
 alias edit-bash='vim ~/.bashrc'

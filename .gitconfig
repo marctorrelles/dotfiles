@@ -2,6 +2,9 @@
   name = Marc Torrelles
   email = marctorrelles@gmail.com
 
+[core]
+  editor = cursor --wait
+
 [push]
   default = simple
   autoSetupRemote = true
