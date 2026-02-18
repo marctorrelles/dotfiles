@@ -29,7 +29,7 @@
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
   # View the current working tree status using the short format
-  s = status -s
+  s = !echo "\033[1;32m$(git rev-parse --abbrev-ref HEAD)\033[0m" && (git status -s | grep . || echo "\033[2mNo changes\033[0m")
 
   # Show the diff between the latest commit and the current state
   d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
