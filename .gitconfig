@@ -73,6 +73,9 @@
   # Create a new branch
   new = checkout -b
 
+  # Checkout main
+  main = checkout main
+
   # Sync local branch with origin
   sync = "!f() { git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD) $1; }; f"
 

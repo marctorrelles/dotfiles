@@ -23,6 +23,14 @@ alias migrate='bundle exec rails db:migrate'
 alias data='bundle exec rails data:migrate'
 
 ## Libraries
+git() {
+  if [ "$1" = "-" ]; then
+    shift
+    command git checkout - "$@"
+  else
+    command git "$@"
+  fi
+}
 alias g='git'
 alias p='pnpm'
 
